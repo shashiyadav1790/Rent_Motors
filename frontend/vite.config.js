@@ -8,5 +8,8 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss()],
     },
-  }
-})
+     esbuild: {
+    jsxInject: `"use client";`
+     }
+ }})
+
