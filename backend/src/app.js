@@ -7,7 +7,7 @@ app.use(cookieParser());
 
 // ✅ Correct CORS configuration
 app.use(cors({
-  origin: "https://rent-motors.vercel.app/", // Replace with your frontend URL
+  origin: "https://rent-motors.vercel.app", // Replace with your frontend URL
   credentials: true,
   methods: "GET, POST, PUT, PATCH, DELETE",
   allowedHeaders: "Content-Type, Authorization"
@@ -15,7 +15,7 @@ app.use(cors({
 
 // ✅ Handle Preflight Requests (OPTIONS method)
 app.options("*", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://rent-motors.vercel.app/");
+  res.setHeader("Access-Control-Allow-Origin", "https://rent-motors.vercel.app");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader("Access-Control-Allow-Credentials", "true");
