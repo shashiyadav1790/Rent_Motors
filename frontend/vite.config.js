@@ -8,5 +8,8 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss()],
     },
+  },
+  optimizeDeps: {
+    include: ["@mui/material", "@mui/icons-material"]
   }
 })
