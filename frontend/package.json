@@ -36,7 +36,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.26.2",
     "react-stripe-checkout": "^2.6.3",
-    "styled-components": "^6.1.13"
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
